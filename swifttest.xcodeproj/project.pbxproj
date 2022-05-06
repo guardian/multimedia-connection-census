@@ -15,6 +15,8 @@
 		F6CBA3DD281C72D0002073BE /* swifttestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA3DC281C72D0002073BE /* swifttestTests.swift */; };
 		F6CBA3E8281C72D0002073BE /* swifttestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA3E7281C72D0002073BE /* swifttestUITests.swift */; };
 		F6CBA3F9281C9086002073BE /* WifiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA3F8281C9086002073BE /* WifiClient.swift */; };
+		F6CBA3FE2825533F002073BE /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA3FD2825533F002073BE /* TestResults.swift */; };
+		F6CBA40928256916002073BE /* WifiStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA40828256916002073BE /* WifiStatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		F6CBA3E7281C72D0002073BE /* swifttestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifttestUITests.swift; sourceTree = "<group>"; };
 		F6CBA3E9281C72D0002073BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6CBA3F8281C9086002073BE /* WifiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiClient.swift; sourceTree = "<group>"; };
+		F6CBA3FD2825533F002073BE /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
+		F6CBA40828256916002073BE /* WifiStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiStatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				F6CBA3D3281C72D0002073BE /* swifttest.entitlements */,
 				F6CBA3CC281C72D0002073BE /* Preview Content */,
 				F6CBA3F8281C9086002073BE /* WifiClient.swift */,
+				F6CBA3FD2825533F002073BE /* TestResults.swift */,
+				F6CBA40828256916002073BE /* WifiStatusView.swift */,
 			);
 			path = swifttest;
 			sourceTree = "<group>";
@@ -268,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CBA40928256916002073BE /* WifiStatusView.swift in Sources */,
 				F6CBA3C9281C72CF002073BE /* ContentView.swift in Sources */,
 				F6CBA3C7281C72CF002073BE /* AppDelegate.swift in Sources */,
+				F6CBA3FE2825533F002073BE /* TestResults.swift in Sources */,
 				F6CBA3F9281C9086002073BE /* WifiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
