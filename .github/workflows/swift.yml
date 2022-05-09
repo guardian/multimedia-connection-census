@@ -20,14 +20,14 @@ jobs:
         token: ${{secrets.github_token}}
     - name: Set Build Number
       run: |
-        /usr/libexec/PlistBuddy -c "Set :CFBundleVersion Build ${BUILD_NUMBER}" "swifttest/Info.plist"
+        /usr/libexec/PlistBuddy -c "Set :CFBundleVersion Build ${BUILD_NUMBER}" "connection-census/Info.plist"
         
     - name: Build
       run: |
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \\.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \\.xcodeproj\$`"; fi
           file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
           mkdir $PWD/build
-          xcodebuild clean archive -archivePath $PWD/build/Build.xcarchive -scheme swifttest -"$filetype_parameter" "$file_to_build" | xcpretty && exit ${PIPESTATUS[0]}
+          xcodebuild clean archive -archivePath $PWD/build/Build.xcarchive -scheme connection-census -"$filetype_parameter" "$file_to_build" | xcpretty && exit ${PIPESTATUS[0]}
     - name: Export Executable
       run: |
         mkdir $PWD/application
@@ -35,7 +35,7 @@ jobs:
     - name: Package Executable
       run: |
         mkdir $PWD/package
-        pkgbuild --install-location /Applications --component $PWD/application/swifttest.app $PWD/package/swifttest.pkg
+        pkgbuild --install-location /Applications --component $PWD/application/connection-census.app $PWD/package/connection-census.pkg
     - name: Upload Package
       uses: actions/upload-artifact@v2.3.1
       with:
