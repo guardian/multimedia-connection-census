@@ -17,7 +17,7 @@ jobs:
       id: buildnumber
       uses: einaregilsson/build-number@v3
       with:
-      token: ${{secrets.github_token}}
+        token: ${{secrets.github_token}}
     - name: Set Build Number
       run: |
         /usr/libexec/PlistBuddy -c "Set :CFBundleVersion Build ${BUILD_NUMBER}" "swifttest/Info.plist"
