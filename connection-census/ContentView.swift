@@ -37,14 +37,6 @@ struct ContentView: View {
                                 label: "EU Cloud",
                                 content: Text("Not implemented")
                 )
-//                HStack(alignment: .center, spacing: 10, content: {
-//                    Circle().size(
-//                        CGSize(width: 18, height: 18))
-//                        .foregroundColor(iconColour)
-//                        .frame(width:20, height:20)
-//                    Text("EU Cloud")
-//                        .multilineTextAlignment(.leading).frame(width:labelColumnWidth, height:20)
-//                }).padding(.all, 20)
                 HStack(alignment: .bottom, spacing: 10, content: {
                     Text("Placeholder")
                 }).padding(.all, 20)
