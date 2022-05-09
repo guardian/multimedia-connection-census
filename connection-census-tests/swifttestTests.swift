@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import swifttest
+@testable import connection_census
 
 class swifttestTests: XCTestCase {
 

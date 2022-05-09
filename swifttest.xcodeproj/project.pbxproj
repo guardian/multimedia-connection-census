@@ -87,8 +87,8 @@
 			children = (
 				F6BC7871282927D900743E26 /* .github */,
 				F6CBA3C5281C72CF002073BE /* connection-census */,
-				F6CBA3DB281C72D0002073BE /* swifttestTests */,
-				F6CBA3E6281C72D0002073BE /* swifttestUITests */,
+				F6CBA3DB281C72D0002073BE /* connection-census-tests */,
+				F6CBA3E6281C72D0002073BE /* connection-census-uitests */,
 				F6CBA3C4281C72CF002073BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,22 +128,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F6CBA3DB281C72D0002073BE /* swifttestTests */ = {
+		F6CBA3DB281C72D0002073BE /* connection-census-tests */ = {
 			isa = PBXGroup;
 			children = (
 				F6CBA3DC281C72D0002073BE /* swifttestTests.swift */,
 				F6CBA3DE281C72D0002073BE /* Info.plist */,
 			);
-			path = swifttestTests;
+			path = "connection-census-tests";
 			sourceTree = "<group>";
 		};
-		F6CBA3E6281C72D0002073BE /* swifttestUITests */ = {
+		F6CBA3E6281C72D0002073BE /* connection-census-uitests */ = {
 			isa = PBXGroup;
 			children = (
 				F6CBA3E7281C72D0002073BE /* swifttestUITests.swift */,
 				F6CBA3E9281C72D0002073BE /* Info.plist */,
 			);
-			path = swifttestUITests;
+			path = "connection-census-uitests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,17 +493,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = swifttestTests/Info.plist;
+				INFOPLIST_FILE = "connection-census-tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.theguardian.swifttestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.theguardian.connection-census-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swifttest.app/Contents/MacOS/swifttest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/connection-census.app/Contents/MacOS/connection-census";
 			};
 			name = Debug;
 		};
@@ -514,17 +514,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = swifttestTests/Info.plist;
+				INFOPLIST_FILE = "connection-census-tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.theguardian.swifttestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.theguardian.connection-census-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swifttest.app/Contents/MacOS/swifttest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/connection-census.app/Contents/MacOS/connection-census";
 			};
 			name = Release;
 		};
@@ -534,13 +534,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = swifttestUITests/Info.plist;
+				INFOPLIST_FILE = "connection-census-uitests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.theguardian.swifttestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "connection-census-uitests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = swifttest;
@@ -553,13 +553,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = swifttestUITests/Info.plist;
+				INFOPLIST_FILE = "connection-census-uitests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.theguardian.swifttestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "connection-census-uitests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = swifttest;
