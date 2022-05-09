@@ -53,9 +53,6 @@ struct ContentView: View {
                                 label: "EU Cloud",
                                 content: Text("Not implemented")
                 )
-                HStack(alignment: .bottom, spacing: 10, content: {
-                    Text("Placeholder")
-                }).padding(.all, 20)
             }).lineSpacing(5.0)
             Button(action: onClick) {
                 Text("Run test")
