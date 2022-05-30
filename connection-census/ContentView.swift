@@ -11,17 +11,28 @@ import SwiftUI
 struct ContentView: View {
     @State var iconColour:Color = .yellow
     @State var wifiStatus:CurrentWifi?
+    @State var ipInfo:IPInfo?
     @State var testWasRun = false
     
     func onClick() {
         do {
             wifiStatus = try InterrogateWifi()
-            iconColour = .green
-            testWasRun = true
         } catch let err {
             let panel = NSAlert(error: err)
             panel.runModal()
         }
+        
+        do {
+            try RetrieveIPInfo(completion: {(newInfo) in
+                ipInfo = newInfo
+            })
+        } catch let err {
+            let panel = NSAlert(error: err)
+            panel.runModal()
+        }
+        
+        iconColour = .green
+        testWasRun = true
     }
     
     var body: some View {
@@ -34,12 +45,14 @@ struct ContentView: View {
                 )
                 TestResultsView(iconColour: $iconColour,
                                 testWasRun: $testWasRun,
+                                label: "IP Info",
+                                content: IpInfoView(content: $ipInfo)
+                )
+                TestResultsView(iconColour: $iconColour,
+                                testWasRun: $testWasRun,
                                 label: "EU Cloud",
                                 content: Text("Not implemented")
                 )
-                HStack(alignment: .bottom, spacing: 10, content: {
-                    Text("Placeholder")
-                }).padding(.all, 20)
             }).lineSpacing(5.0)
             Button(action: onClick) {
                 Text("Run test")

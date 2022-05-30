@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F671DACC28294E3500986357 /* IpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671DACB28294E3500986357 /* IpInfo.swift */; };
+		F671DAD1282952B600986357 /* IpInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671DAD0282952B600986357 /* IpInfoView.swift */; };
 		F6CBA3C7281C72CF002073BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA3C6281C72CF002073BE /* AppDelegate.swift */; };
 		F6CBA3C9281C72CF002073BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CBA3C8281C72CF002073BE /* ContentView.swift */; };
 		F6CBA3CB281C72D0002073BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6CBA3CA281C72D0002073BE /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F671DACB28294E3500986357 /* IpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpInfo.swift; sourceTree = "<group>"; };
+		F671DAD0282952B600986357 /* IpInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpInfoView.swift; sourceTree = "<group>"; };
 		F6BC7871282927D900743E26 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 		F6CBA3C3281C72CF002073BE /* connection-census.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "connection-census.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6CBA3C6281C72CF002073BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,8 +118,10 @@
 				F6CBA3D3281C72D0002073BE /* swifttest.entitlements */,
 				F6CBA3CC281C72D0002073BE /* Preview Content */,
 				F6CBA3F8281C9086002073BE /* WifiClient.swift */,
-				F6CBA3FD2825533F002073BE /* TestResults.swift */,
 				F6CBA40828256916002073BE /* WifiStatusView.swift */,
+				F6CBA3FD2825533F002073BE /* TestResults.swift */,
+				F671DACB28294E3500986357 /* IpInfo.swift */,
+				F671DAD0282952B600986357 /* IpInfoView.swift */,
 			);
 			path = "connection-census";
 			sourceTree = "<group>";
@@ -276,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F671DACC28294E3500986357 /* IpInfo.swift in Sources */,
 				F6CBA40928256916002073BE /* WifiStatusView.swift in Sources */,
 				F6CBA3C9281C72CF002073BE /* ContentView.swift in Sources */,
+				F671DAD1282952B600986357 /* IpInfoView.swift in Sources */,
 				F6CBA3C7281C72CF002073BE /* AppDelegate.swift in Sources */,
 				F6CBA3FE2825533F002073BE /* TestResults.swift in Sources */,
 				F6CBA3F9281C9086002073BE /* WifiClient.swift in Sources */,
